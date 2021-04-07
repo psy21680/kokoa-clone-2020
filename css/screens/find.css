@@ -47,10 +47,11 @@
 .open-post__members {
   display: flex;
   align-items: center;
+  margin-top: 5px;
 }
 
 .open-post__members img {
-  margin-top: 7px;
+  margin-top: 2px;
   width: 15px;
   height: 15px;
   border-radius: 50%;
