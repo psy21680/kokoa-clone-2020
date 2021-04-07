@@ -25,6 +25,15 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
+@keyframes hideSplashScreen {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 #splash-screen {
   background-color: var(--yellow);
   position: absolute; /* body기준으로 정렬되길 바람*/
@@ -34,5 +43,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 120px;
+  font-size: 95px;
+  animation: hideSplashScreen 0.4s ease-in-out forwards; /*forward는 마지막 keyframes을 기억*/
+  animation-delay: 0.5s;
 }
