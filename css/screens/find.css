@@ -96,6 +96,26 @@
   font-size: 15px;
 }
 
-.open_post__heart-count span {
-  margin-left: 3px;
+.open-post__heart-count span {
+  margin-left: 5px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.open-post__heart-count:hover i {
+  will-change: transform; /*브라우저에게 변할거라고 힌트를 줌으로써 애니메이션을 좀 더 낫게 만듬*/
+  animation: heartBeat 1s linear infinite;
 }
